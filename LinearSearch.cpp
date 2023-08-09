@@ -1,17 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-int linearsearch(int array[],int n,int key){
-
-    for (int i = 0; i <n; i++)
-    {
-        if(array[i]==key){
-            return i;
-        }
-    }
-    return -1;
-    
-}
+int linearsearch(int array[],int n,int key);
 int main(){
 
     int n;
@@ -27,4 +16,16 @@ int main(){
     cout<<linearsearch(array,n,key)<<endl;
     
 
+}
+
+int linearsearch(int array[],int n,int key){
+
+    for (int i = 0; i <n; i++)
+    {
+        if(array[i]==key){
+            return i;
+        }
+    }
+    return -1;
+    
 }
